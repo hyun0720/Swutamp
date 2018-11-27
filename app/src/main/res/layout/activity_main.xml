@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2e8de"
+    android:weightSum="1">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardview1"
+                    card_view:cardCornerRadius="3dp"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="flipCard">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/image1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:src="@drawable/gaeun" />
+
+                            <TextView
+                                android:id="@+id/title1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="@string/gaeun" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+
+
+                                <ImageButton
+                                    android:id="@+id/btnr1"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On" />
+
+
+                                <ImageButton
+                                    android:id="@+id/btnr2"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On2" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr3"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On3" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr4"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On4" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr5"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On5" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:id="@+id/btnr6"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On6" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr7"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On7" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr8"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On8" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr9"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On9" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr10"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On10" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!--쿠폰이 몇개인지 string값으로 -->
+                        <TextView
+                            android:id="@+id/countcoupon1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="280dp"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardview1_2"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="flipCard"
+                    card_view:cardCornerRadius="3dp">
+
+                    <ImageButton
+                        android:id="@+id/coupon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/cafe"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_gravity="center"
+                        android:text="Click"
+                        android:textColor="@color/white"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardview2"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    card_view:cardCornerRadius="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/image2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:src="@drawable/cafedream" />
+
+                            <TextView
+                                android:id="@+id/title2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="@string/cafedream" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+
+
+                                <ImageButton
+                                    android:id="@+id/btnr11"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On11" />
+
+
+                                <ImageButton
+                                    android:id="@+id/btnr12"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On12" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr13"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On13" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr14"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On14" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr15"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On15" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:id="@+id/btnr16"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On16" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr17"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On17" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr18"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On18" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr19"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On19" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr20"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On20" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!--쿠폰이 몇개인지 string값으로 -->
+                        <TextView
+                            android:id="@+id/countcoupon2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="280dp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardview2_2"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="flipCard"
+                    card_view:cardCornerRadius="3dp">
+
+                    <ImageButton
+                        android:id="@+id/coupon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/cafe"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_gravity="center"
+                        android:text="Click"
+                        android:textColor="@color/white"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardview4"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    card_view:cardCornerRadius="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/image4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:src="@drawable/image4" />
+
+                            <TextView
+                                android:id="@+id/title4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="@string/etang" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+
+
+                                <ImageButton
+                                    android:id="@+id/btnr31"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On31" />
+
+
+                                <ImageButton
+                                    android:id="@+id/btnr32"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On32" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr33"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On33" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr34"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On34" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr35"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On35" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:id="@+id/btnr36"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On36" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr37"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On37" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr38"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On38" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr39"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On39" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr40"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On40" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!--쿠폰이 몇개인지 string값으로 -->
+                        <TextView
+                            android:id="@+id/countcoupon4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="280dp"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardview4_2"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="flipCard"
+                    card_view:cardCornerRadius="3dp">
+
+                    <ImageButton
+                        android:id="@+id/coupon4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/cafe"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_gravity="center"
+                        android:text="Click"
+                        android:textColor="@color/white"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardview3"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    card_view:cardCornerRadius="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/image3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:src="@drawable/image3" />
+
+                            <TextView
+                                android:id="@+id/title3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="@string/pandorothy" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+
+
+                                <ImageButton
+                                    android:id="@+id/btnr21"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On21" />
+
+
+                                <ImageButton
+                                    android:id="@+id/btnr22"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On22" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr23"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On23" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr24"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On24" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr25"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On25" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:id="@+id/btnr26"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On26" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr27"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On27" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr28"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On28" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr29"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On29" />
+
+                                <ImageButton
+                                    android:id="@+id/btnr30"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ogstamp"
+                                    android:clickable="false"
+                                    android:onClick="On30" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!--쿠폰이 몇개인지 string값으로 -->
+                        <TextView
+                            android:id="@+id/countcoupon3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="280dp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardview3_2"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="flipCard"
+                    card_view:cardCornerRadius="3dp">
+
+                    <ImageButton
+                        android:id="@+id/coupon3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/cafe"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_gravity="center"
+                        android:text="Click"
+                        android:textColor="@color/white"/>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
